@@ -1,5 +1,7 @@
 package cli;
 
+import models.DataHandler;
+
 import java.util.Scanner;
 
 public class MainCLI {
@@ -44,11 +46,24 @@ public class MainCLI {
     public static void listAllDomesticFlightsCLInterface() {
         // TODO code here ...
     }
+
     public static void bookDomesticFlightCLInterface() {
         // TODO code here ...
     }
 
+    public static void listAirfleet() {
+        // TODO code here ...
+    }
+
+    public static void listUsers() {
+        DataHandler.getUsers().listUsers();
+    }
+
     public static void main(String[] args) {
-        MainCLI.displayMainCLInterface();
+        DataHandler.populateUsers();
+        DataHandler.populateUsers();
+
+        // MainCLI.listUsers();
+        // MainCLI.displayMainCLInterface();
     }
 }
