@@ -1,12 +1,16 @@
 package models;
 
-public class Account extends Person{
+public class Account extends Person {
     // Fields.
     private String login;
     private String email;
     private String password;
 
     // Constructors.
+    public Account() {
+        super();
+    }
+
     public Account(String name, String lastName, String login, String email, String password) {
         super(name, lastName);
         this.login = login;

@@ -1,30 +1,34 @@
 package models;
 
-public abstract class Person implements Comparable<Person>{
+public abstract class Person implements Comparable<Person> {
     // Fields.
-    private String fistName;
+    private String firstName;
     private String lastName;
 
     // Constructors.
-    public Person(String name, String lastName){
-        this.fistName = name;
+    public Person() {
+        // Empty constructor.
+    }
+
+    public Person(String name, String lastName) {
+        this.firstName = name;
         this.lastName = lastName;
     }
 
     // Methods.
     @Override
     // Re-implement this method.
-    public int compareTo(Person person){
-        return (fistName.compareTo(person.fistName));
+    public int compareTo(Person person) {
+        return (firstName.compareTo(person.firstName));
     }
 
     // Getters and Setters.
-    public String getFistName() {
-        return fistName;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setFistName(String fistName) {
-        this.fistName = fistName;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
     public String getLastName() {
@@ -38,7 +42,7 @@ public abstract class Person implements Comparable<Person>{
     @Override
     public String toString() {
         return "Person{" +
-                "name='" + fistName + '\'' +
+                "name='" + firstName + '\'' +
                 ", email='" + lastName + '\'' +
                 '}';
     }

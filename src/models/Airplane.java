@@ -14,6 +14,10 @@ public class Airplane {
     private int capacity;
 
     // Constructors.
+    public Airplane() {
+        // Empty constructor.
+    }
+
     public Airplane(long code, String type, String model, int capacity) {
         this.code = code;
         this.type = type;
