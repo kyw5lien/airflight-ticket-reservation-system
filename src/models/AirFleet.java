@@ -46,18 +46,6 @@ public class AirFleet {
         return null;
     }
 
-    public boolean listAirFleet(){
-        if(!airFleet.isEmpty()){
-            for(Airplane airplane : airFleet){
-                System.out.println(airplane);
-                System.out.println("----------------------");
-            }
-            return true;
-        } else{
-            return false;
-        }
-    }
-
     // Getters and Setters.
     public Set<Airplane> getAirFleet() {
         return airFleet;

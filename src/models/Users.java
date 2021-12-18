@@ -46,18 +46,6 @@ public class Users {
         return null;
     }
 
-    public boolean listUsers(){
-        if(!users.isEmpty()){
-            for(Account Account : users){
-                System.out.println(Account);
-                System.out.println("----------------------");
-            }
-            return true;
-        } else{
-            return false;
-        }
-    }
-
     // Getters and Setters.
     public Set<Account> getUsers() {
         return users;

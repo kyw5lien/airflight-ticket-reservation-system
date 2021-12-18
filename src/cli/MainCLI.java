@@ -1,5 +1,7 @@
 package cli;
 
+import models.Account;
+import models.Airplane;
 import models.DataHandler;
 
 import java.util.Scanner;
@@ -21,19 +23,19 @@ public class MainCLI {
 
                     switch (input) {
                         case 1:
-                            System.out.println("---- Listing All Domestic FLights ... ----");
+                            System.out.println("\n---- Listing All Domestic FLights ... ----");
                             MainCLI.listAllDomesticFlightsCLInterface();
                             break;
                         case 2:
-                            System.out.println("---- Book Domestic Flight ----");
+                            System.out.println("\n---- Book Domestic Flight ----");
                             MainCLI.bookDomesticFlightCLInterface();
                             break;
                         case 0:
-                            System.out.println("Exiting now ...");
+                            System.out.println("\nExiting now ...");
                             keepRunning = false;
                             break;
                         default:
-                            System.out.println("Please select an option between 1 and 2! Press 0 to Exit.");
+                            System.out.println("\nPlease select an option between 1 and 2! Press 0 to Exit.");
                             break;
                     }
                 } catch (Exception e) {
@@ -51,19 +53,36 @@ public class MainCLI {
         // TODO code here ...
     }
 
-    public static void listAirfleet() {
+    public static void displayAirFleet() {
         // TODO code here ...
+        if (!DataHandler.getAirplaneListing().getAirFleet().isEmpty()) {
+            for (Airplane airplane : DataHandler.getAirplaneListing().getAirFleet()) {
+                System.out.println(airplane);
+                System.out.println("----------------------");
+            }
+        } else {
+            System.out.println("No Airplanes Found!");
+        }
     }
 
-    public static void listUsers() {
-        DataHandler.getUsers().listUsers();
+    public static void displayUsers() {
+        if (!DataHandler.getUsersListing().getUsers().isEmpty()) {
+            for (Account account : DataHandler.getUsersListing().getUsers()) {
+                System.out.println(account);
+                System.out.println("----------------------");
+            }
+        } else {
+            System.out.println("No Users Found!");
+        }
     }
 
     public static void main(String[] args) {
         DataHandler.populateUsers();
-        DataHandler.populateUsers();
+        DataHandler.populateAirFleet();
 
-        // MainCLI.listUsers();
+        MainCLI.displayUsers();
+        MainCLI.displayAirFleet();
+
         // MainCLI.displayMainCLInterface();
     }
 }

@@ -12,7 +12,7 @@ public class AirFleetTester {
         Airplane ap4 = new Airplane(4, "Boeing", "787", 242);
 
         // Populating the Airplanes List.
-        AirFleet airFleet= new AirFleet();
+        AirFleet airFleet = new AirFleet();
         airFleet.addAirplane(ap1);
         airFleet.addAirplane(ap2);
         airFleet.addAirplane(ap3);
@@ -20,8 +20,8 @@ public class AirFleetTester {
 
         // Testing the AirFleet class ...
         // Test 1: List air fleet
-        System.out.println("---- Listing Airplanes ----");
-        airFleet.listAirFleet();
+        // System.out.println("---- Listing Airplanes ----");
+        // airFleet.listAirFleet();
 
         // Test 2: Find airplane by code
         System.out.println("---- Retrieving airplane with code 4 ----");
@@ -29,9 +29,9 @@ public class AirFleetTester {
 
         // Test 3: Find airplane by model
         String model = "A350";
-        System.out.println("---- Searching airplane model " +model +" ----");
-        if(airFleet.findAirplaneByModel(model) == null) {
-            System.out.println("No airplane with model " +model +" found.");
+        System.out.println("---- Searching airplane model " + model + " ----");
+        if (airFleet.findAirplaneByModel(model) == null) {
+            System.out.println("No airplane with model " + model + " found.");
         } else{
             System.out.println(airFleet.findAirplaneByModel(model));
         }

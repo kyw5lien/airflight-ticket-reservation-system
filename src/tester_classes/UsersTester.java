@@ -20,18 +20,18 @@ public class UsersTester {
 
         // Testing the Users class ...
         // Test 1: List Users
-        System.out.println("---- Listing Users ----");
-        users.listUsers();
+        // System.out.println("---- Listing Users ----");
+        // users.listUsers();
 
         // Test 2: Find user by login
         String login = "hartley";
-        System.out.println("---- Retrieving user with login " +login +" ----");
+        System.out.println("---- Retrieving user with login " + login + " ----");
         System.out.println(users.findAccountByLogin(login));
 
         // Test 3: Find user by email
         String email = "d@hantuchova.com";
-        System.out.println("---- Searching user's email " +email +" ----");
-        if(users.findAccountByEmail(email) == null) {
+        System.out.println("---- Searching user's email " + email + " ----");
+        if (users.findAccountByEmail(email) == null) {
             System.out.println("No account with email " +email +" found.");
         } else{
             System.out.println(users.findAccountByEmail(email));
