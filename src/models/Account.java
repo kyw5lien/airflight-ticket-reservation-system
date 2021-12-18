@@ -46,10 +46,9 @@ public class Account extends Person {
     // toString method.
     @Override
     public String toString() {
-        return "Account{" +
-                "login='" + login + '\'' +
-                ", email='" + email + '\'' +
-                ", password='" + password + '\'' +
-                '}';
+        return "Account" + "\n" +
+                "Login: " + login + "\n" +
+                "E-mail: " + email + "\n" +
+                "Password: " + password;
     }
 }
