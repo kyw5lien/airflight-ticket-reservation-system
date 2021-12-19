@@ -24,11 +24,11 @@ public class MainCLI {
                     switch (input) {
                         case 1:
                             System.out.println("\n---- Listing All Domestic FLights ... ----");
-                            MainCLI.listAllDomesticFlightsCLInterface();
+                            MainCLI.displayAllDomesticFlightsCLInterface();
                             break;
                         case 2:
                             System.out.println("\n---- Book Domestic Flight ----");
-                            MainCLI.bookDomesticFlightCLInterface();
+                            MainCLI.displayBookDomesticFlightCLInterface();
                             break;
                         case 0:
                             System.out.println("\nExiting now ...");
@@ -45,11 +45,19 @@ public class MainCLI {
         }
     }
 
-    public static void listAllDomesticFlightsCLInterface() {
+    public static void displayAllDomesticFlightsCLInterface() {
         // TODO code here ...
+        if (!DataHandler.getAirplaneListing().getAirFleet().isEmpty()) {
+            for (Airplane airplane : DataHandler.getAirplaneListing().getAirFleet()) {
+                System.out.println(airplane);
+                System.out.println("----------------------");
+            }
+        } else {
+            System.out.println("No Airplanes Found!");
+        }
     }
 
-    public static void bookDomesticFlightCLInterface() {
+    public static void displayBookDomesticFlightCLInterface() {
         // TODO code here ...
     }
 

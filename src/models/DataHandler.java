@@ -20,11 +20,7 @@ public class DataHandler {
         usersListing.addAccount(acc3);
         usersListing.addAccount(acc4);
 
-        if (!usersListing.getUsers().isEmpty()) {
-            return true;
-        } else {
-            return false;
-        }
+        return !usersListing.getUsers().isEmpty();
     }
 
     public static boolean populateAirFleet() {

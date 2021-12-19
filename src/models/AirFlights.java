@@ -13,7 +13,7 @@ public class AirFlights {
         // Empty constructor.
     }
     public AirFlights(Set<Flight> airFlights) {
-        this.airFlights = this.airFlights;
+        this.airFlights = airFlights;
     }
 
     // Methods.
@@ -42,17 +42,9 @@ public class AirFlights {
 
     // Implement this method ...
     public Set<Flight> searchAirFlightsByPeriod(Date initialDate, Date endDate){
-        Set<Flight> airFlights = new HashSet<>();
+        // TODO code here ...
 
-        // Find all flights with dateOfFlight in the period specified by initialdate and endDate.
-//        for(Flight flight : airFlights){
-//            if(){
-//                // If the flight satisfies the condition add it to the set of airFlights.
-//               airFlights.add(flight);
-//            }
-//        }
-
-        return airFlights;
+        return null;
     }
 
     // Getters and Setters.
