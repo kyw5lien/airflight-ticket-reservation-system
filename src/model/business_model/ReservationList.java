@@ -1,4 +1,6 @@
-package model;
+package model.business_model;
+
+import model.business_model.Reservation;
 
 import java.util.Date;
 import java.util.List;

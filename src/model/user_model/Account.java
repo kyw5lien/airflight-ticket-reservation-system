@@ -1,4 +1,6 @@
-package model;
+package model.user_model;
+
+import helperclasses.EmailValidator;
 
 public class Account extends Person {
     // Fields.
@@ -14,7 +16,10 @@ public class Account extends Person {
     public Account(String name, String lastName, String login, String email, String password) {
         super(name, lastName);
         this.login = login;
-        this.email = email;
+
+        if(EmailValidator.isEmailValid(email))
+            this.email = email;
+
         this.password = password;
     }
 
@@ -44,11 +49,22 @@ public class Account extends Person {
     }
 
     // toString method.
+    /*
     @Override
     public String toString() {
         return "Account" + "\n" +
                 "Login: " + login + "\n" +
                 "E-mail: " + email + "\n" +
                 "Password: " + password;
+    }
+    */
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "login:'" + login + '\'' +
+                ", email:'" + email + '\'' +
+                ", password:'" + password + '\'' +
+                '}';
     }
 }

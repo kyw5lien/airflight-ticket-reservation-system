@@ -1,6 +1,6 @@
-package tester_classes;
+package tester_classes.user_tester;
 
-import model.Account;
+import model.user_model.Account;
 
 public class CustomerTester {
     public static void main(String[] args) {

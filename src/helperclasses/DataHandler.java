@@ -1,16 +1,21 @@
 package helperclasses;
 
-import model.Account;
-import model.AirFleet;
-import model.Airplane;
-import model.Users;
+import model.flights_model.AirFleet;
+import model.flights_model.AirFlights;
+import model.flights_model.Airplane;
+import model.flights_model.Flight;
+import model.user_model.Account;
+import model.user_model.Users;
 
 public class DataHandler {
     private static Account account;
     private static Users usersListing = new Users();
 
     private static Airplane airplane;
-    private static AirFleet airplaneListing;
+    private static AirFleet airplaneListing = new AirFleet();
+
+    private static Flight flight;
+    private static AirFlights airFlights = new AirFlights();
 
     public static boolean populateUsers() {
         // TODO code here ...
@@ -50,6 +55,14 @@ public class DataHandler {
         } else {
             return false;
         }
+    }
+
+    public static boolean populateFlights(){
+        return false;
+    }
+
+    public static boolean populateAirFlights(){
+        return false;
     }
 
     // Getters and Setters.

@@ -1,7 +1,7 @@
 package cli;
 
-import model.Account;
-import model.Airplane;
+import model.user_model.Account;
+import model.flights_model.Airplane;
 import helperclasses.DataHandler;
 
 import java.util.Scanner;
@@ -88,9 +88,9 @@ public class MainCLI {
         DataHandler.populateUsers();
         DataHandler.populateAirFleet();
 
-        MainCLI.displayUsers();
-        MainCLI.displayAirFleet();
+        //MainCLI.displayUsers();
+        //MainCLI.displayAirFleet();
 
-        // MainCLI.displayMainCLInterface();
+        MainCLI.displayMainCLInterface();
     }
 }

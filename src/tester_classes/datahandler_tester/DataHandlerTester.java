@@ -1,4 +1,4 @@
-package tester_classes;
+package tester_classes.datahandler_tester;
 
 import helperclasses.DataHandler;
 

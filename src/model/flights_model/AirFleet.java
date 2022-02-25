@@ -1,4 +1,4 @@
-package model;
+package model.flights_model;
 
 /*
   AirFleet Class..
@@ -6,6 +6,9 @@ package model;
   @author kyw5lien
  */
 
+import model.flights_model.Airplane;
+
+import java.util.HashSet;
 import java.util.Set;
 
 public class AirFleet {
@@ -14,7 +17,7 @@ public class AirFleet {
 
     // Constructors.
     public AirFleet(){
-        // Empty Constructor.
+        this.airFleet = new HashSet<Airplane>();
     }
     public AirFleet(Set<Airplane> airFleet) {
         this.airFleet = airFleet;

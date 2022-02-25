@@ -1,7 +1,7 @@
-package tester_classes;
+package tester_classes.user_tester;
 
-import model.Account;
-import model.Users;
+import model.user_model.Account;
+import model.user_model.Users;
 
 public class UsersTester {
     public static void main(String[] args) {
@@ -24,7 +24,7 @@ public class UsersTester {
         // users.listUsers();
 
         // Test 2: Find user by login
-        String login = "hartley";
+        String login = "clijsters";
         System.out.println("---- Retrieving user with login " + login + " ----");
         System.out.println(users.findAccountByLogin(login));
 

@@ -1,4 +1,4 @@
-package model;
+package model.user_model;
 
 /**
  * Class Users.
@@ -6,6 +6,9 @@ package model;
  * @author kyw5lien
  */
 
+import model.user_model.Account;
+
+import java.util.HashSet;
 import java.util.Set;
 
 public class Users {
@@ -14,7 +17,7 @@ public class Users {
 
     // Constructors.
     public Users(){
-        // Empty constructor.
+        this.users = new HashSet<Account>();
     }
     public Users(Set<Account> users) {
         this.users = users;

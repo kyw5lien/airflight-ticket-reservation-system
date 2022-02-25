@@ -1,9 +1,6 @@
-package model;
+package model.flights_model;
 
-/**
- * Flight Class.
- * @author kyw5lien
- */
+import model.flights_model.Airplane;
 
 import java.util.Date;
 
@@ -87,16 +84,30 @@ public class Flight {
     }
 
     // toString method.
+    /**
+        public String toString() {
+            return "Flight Information: " + "\n" +
+                    "Flight ID: " + flightID + "\n" +
+                    "Date: " + dateOfFlight + "\n" +
+                    "Origin: " + origin + "\n" +
+                    "Destination: " + destination + "\n" +
+                    "Departure Time: " + departureTime + "\n" +
+                    "Arrival Time: " + arrivalTime + "\n" +
+                    "Airplane Information: " + "\n" +
+                    airplane;
+        }
+    */
+
     @Override
     public String toString() {
-        return "Flight Information: " + "\n" +
-                "Flight ID: " + flightID + "\n" +
-                "Date: " + dateOfFlight + "\n" +
-                "Origin: " + origin + "\n" +
-                "Destination: " + destination + "\n" +
-                "Departure Time: " + departureTime + "\n" +
-                "Arrival Time: " + arrivalTime + "\n" +
-                "Airplane Information: " + "\n" +
-                airplane;
+        return "Flight{" +
+                "flightID:" + flightID +
+                ", dateOfFlight:" + dateOfFlight +
+                ", origin:'" + origin + '\'' +
+                ", destination:'" + destination + '\'' +
+                ", departureTime:" + departureTime +
+                ", arrivalTime:" + arrivalTime +
+                ", airplane:" + airplane +
+                '}';
     }
 }

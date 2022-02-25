@@ -1,7 +1,7 @@
-package tester_classes;
+package tester_classes.airfleet_tester;
 
-import model.AirFleet;
-import model.Airplane;
+import model.flights_model.AirFleet;
+import model.flights_model.Airplane;
 
 public class AirFleetTester {
     public static void main(String[] args) {

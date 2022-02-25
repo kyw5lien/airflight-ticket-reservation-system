@@ -1,7 +1,7 @@
-package tester_classes;
+package tester_classes.flight_tester;
 
-import model.Airplane;
-import model.Flight;
+import model.flights_model.Airplane;
+import model.flights_model.Flight;
 
 import java.util.Date;
 

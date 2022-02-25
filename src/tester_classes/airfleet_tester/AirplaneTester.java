@@ -1,6 +1,6 @@
-package tester_classes;
+package tester_classes.airfleet_tester;
 
-import model.Airplane;
+import model.flights_model.Airplane;
 
 public class AirplaneTester {
     public static void main(String[] args) {

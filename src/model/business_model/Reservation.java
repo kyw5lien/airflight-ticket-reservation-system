@@ -1,4 +1,7 @@
-package model;
+package model.business_model;
+
+import model.flights_model.Flight;
+import model.user_model.Account;
 
 public class Reservation {
     // Fields.

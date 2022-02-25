@@ -1,4 +1,4 @@
-package model;
+package model.user_model;
 
 public abstract class Person {
     // Fields.
@@ -32,10 +32,20 @@ public abstract class Person {
         this.lastName = lastName;
     }
 
+    /**
+    @Override
+        public String toString() {
+            return "Person" + "\n" +
+                    "First Name : " + firstName + "\n" +
+                    "Last Name : " + lastName + "\n" ;
+        }
+    */
+
     @Override
     public String toString() {
-        return "Person" + "\n" +
-                "First Name : " + firstName + "\n" +
-                "Last Name : " + lastName + "\n" ;
+        return "Person{" +
+                "firstName:'" + firstName + '\'' +
+                ", lastName:'" + lastName + '\'' +
+                '}';
     }
 }

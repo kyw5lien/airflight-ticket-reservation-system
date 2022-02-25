@@ -1,4 +1,4 @@
-package model;
+package model.flights_model;
 
 /**
  * Class design for Airplane.
@@ -42,11 +42,22 @@ public class Airplane {
     }
 
     // toString method.
+    /**
     @Override
     public String toString() {
         return "Aircraft/Code: "+ code + "\n" +
                 "Type: " +type + "\n" +
                 "Model: " +model + "\n" +
                 "Capacity: " +capacity + " seats";
+    }
+    */
+    @Override
+    public String toString() {
+        return "Airplane{" +
+                "code:" + code +
+                ", type:'" + type + '\'' +
+                ", model:'" + model + '\'' +
+                ", capacity:" + capacity +
+                '}';
     }
 }

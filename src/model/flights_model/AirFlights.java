@@ -1,8 +1,8 @@
-package model;
+package model.flights_model;
 
 import java.util.Date;
+import java.util.HashSet;
 import java.util.Set;
-
 
 public class AirFlights {
     // Fields.
@@ -10,7 +10,7 @@ public class AirFlights {
 
     // Constructors.
     public AirFlights(){
-        // Empty constructor.
+        this.airFlights = new HashSet<Flight>();
     }
     public AirFlights(Set<Flight> airFlights) {
         this.airFlights = airFlights;
@@ -19,7 +19,6 @@ public class AirFlights {
     // Methods.
     public void addAirFlight(Flight flight) {
         airFlights.add(flight);
-
     }
 
     public Flight searchAirFlightByID(long flightID) {
@@ -57,8 +56,17 @@ public class AirFlights {
     }
 
     // toString Method.
+    /**
     @Override
     public String toString() {
         return "AirFlights: " + "\n" + airFlights;
+    }
+    */
+
+    @Override
+    public String toString() {
+        return "AirFlights{" +
+                "airFlights:" + airFlights +
+                '}';
     }
 }
