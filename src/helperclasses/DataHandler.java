@@ -58,10 +58,12 @@ public class DataHandler {
     }
 
     public static boolean populateFlights(){
+
         return false;
     }
 
     public static boolean populateAirFlights(){
+
         return false;
     }
 
