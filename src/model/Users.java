@@ -1,13 +1,11 @@
-package models;
+package model;
 
 /**
- * Class design for Users.
+ * Class Users.
  * Contains a list of Accounts and methods to add and retrieve Accounts from a Users Set.
- * @author D&aacute;rio Neves https://github.com/kyw5lien
- * @version 0.1.0
+ * @author kyw5lien
  */
 
-import java.util.HashSet;
 import java.util.Set;
 
 public class Users {
@@ -16,7 +14,7 @@ public class Users {
 
     // Constructors.
     public Users(){
-        users = new HashSet<Account>();
+        // Empty constructor.
     }
     public Users(Set<Account> users) {
         this.users = users;
@@ -57,8 +55,6 @@ public class Users {
 
     @Override
     public String toString() {
-        return "Users{" +
-                "users=" + users +
-                '}';
+        return "Users:" + "\n" + users;
     }
 }

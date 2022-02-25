@@ -1,9 +1,8 @@
-package models;
+package model;
 
 /**
- * Class design for Flight.
- * @author Dário Neves https://github.com/kyw5lien
- * @version 0.1.0
+ * Flight Class.
+ * @author kyw5lien
  */
 
 import java.util.Date;

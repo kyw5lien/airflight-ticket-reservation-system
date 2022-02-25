@@ -1,6 +1,6 @@
-package models;
+package model;
 
-public abstract class Person implements Comparable<Person> {
+public abstract class Person {
     // Fields.
     private String firstName;
     private String lastName;
@@ -10,16 +10,9 @@ public abstract class Person implements Comparable<Person> {
         // Empty constructor.
     }
 
-    public Person(String name, String lastName) {
-        this.firstName = name;
+    public Person(String firstName, String lastName) {
+        this.firstName = firstName;
         this.lastName = lastName;
-    }
-
-    // Methods.
-    @Override
-    // Re-implement this method.
-    public int compareTo(Person person) {
-        return (firstName.compareTo(person.firstName));
     }
 
     // Getters and Setters.
@@ -41,9 +34,8 @@ public abstract class Person implements Comparable<Person> {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "name='" + firstName + '\'' +
-                ", email='" + lastName + '\'' +
-                '}';
+        return "Person" + "\n" +
+                "First Name : " + firstName + "\n" +
+                "Last Name : " + lastName + "\n" ;
     }
 }

@@ -1,6 +1,6 @@
 package tester_classes;
 
-import models.DataHandler;
+import helperclasses.DataHandler;
 
 public class DataHandlerTester {
     public static void main(String[] args) {

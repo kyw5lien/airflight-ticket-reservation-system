@@ -1,4 +1,9 @@
-package models;
+package helperclasses;
+
+import model.Account;
+import model.AirFleet;
+import model.Airplane;
+import model.Users;
 
 public class DataHandler {
     private static Account account;
@@ -9,10 +14,10 @@ public class DataHandler {
 
     public static boolean populateUsers() {
         // TODO code here ...
-        Account acc1 = new Account("kevin", "mitnick", "mitnick", "k@mitnick.com", "password1");
+        Account acc1 = new Account("kevin", "kevin", "kevin", "k@kevin.com", "password1");
         Account acc2 = new Account("daniela", "hantuchova", "hantuchova", "d@hantuchova.com", "password2");
         Account acc3 = new Account("anna", "kournikova", "kournikova", "a@kournikova.com", "password3");
-        Account acc4 = new Account("nina", "hartley", "hartley", "nina@hartley.com", "password4");
+        Account acc4 = new Account("kim", "clijsters", "clijsters", "k@clijsters.com", "password4");
 
         // Populating the Users List.
         usersListing.addAccount(acc1);

@@ -1,4 +1,4 @@
-package models;
+package model;
 
 public class Reservation {
     // Fields.
@@ -45,10 +45,11 @@ public class Reservation {
     // toString method.
     @Override
     public String toString() {
-        return "Reservation{" +
-                "reservationCode=" + reservationCode +
-                ", flight=" + reservationFlight +
-                ", account=" + account +
-                '}';
+        return "Reservation:" + "\n" +
+                "Reservation Code: " + reservationCode + "\n" +
+                "Flight: " + "\n" +
+                reservationFlight + "\n" +
+                "Account: " + "\n" +
+                account;
     }
 }

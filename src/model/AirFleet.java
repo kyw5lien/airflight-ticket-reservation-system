@@ -1,13 +1,11 @@
-package models;
+package model;
 
 /*
-  Class design for Users.
+  AirFleet Class..
   Contains a list of airplanes and methods to add and retrieve airplanes from an air fleet.
-  @author Dário Neves https://github.com/kyw5lien
- * @version 0.1.0
+  @author kyw5lien
  */
 
-import java.util.HashSet;
 import java.util.Set;
 
 public class AirFleet {
@@ -16,7 +14,7 @@ public class AirFleet {
 
     // Constructors.
     public AirFleet(){
-        airFleet = new HashSet<Airplane>();
+        // Empty Constructor.
     }
     public AirFleet(Set<Airplane> airFleet) {
         this.airFleet = airFleet;
@@ -28,7 +26,7 @@ public class AirFleet {
 
     }
 
-    public Airplane findAirplaneByCode(long code) {
+    public Airplane searchAirplaneByCode(long code) {
         for(Airplane airplane : airFleet){
             if(airplane.getCode() == code){
                 return airplane;
@@ -37,7 +35,7 @@ public class AirFleet {
         return null;
     }
 
-    public Airplane findAirplaneByModel(String model){
+    public Airplane searchAirplaneByModel(String model){
             for (Airplane airplane : airFleet) {
                 if (airplane.getModel().equals(model)) {
                     return airplane;
@@ -58,8 +56,6 @@ public class AirFleet {
     // toString Method.
     @Override
     public String toString() {
-        return "Users{" +
-                "airFleet=" + airFleet +
-                '}';
+        return "AirFleet:" + "\n" + airFleet;
     }
 }

@@ -1,11 +1,11 @@
 package tester_classes;
 
-import models.AirFleet;
-import models.Airplane;
+import model.AirFleet;
+import model.Airplane;
 
 public class AirFleetTester {
     public static void main(String[] args) {
-        // Declaring some airplane vars for populating the Airplanes List.
+        // Declaring some airplane vars to populate the Airplanes List.
         Airplane ap1 = new Airplane(1, "Boeing", "707", 189);
         Airplane ap2 = new Airplane(2, "AirBus", "A350", 366);
         Airplane ap3 = new Airplane(3, "Bombardier", "Q400", 80);
@@ -25,15 +25,15 @@ public class AirFleetTester {
 
         // Test 2: Find airplane by code
         System.out.println("---- Retrieving airplane with code 4 ----");
-        System.out.println(airFleet.findAirplaneByCode(4));
+        System.out.println(airFleet.searchAirplaneByCode(4));
 
         // Test 3: Find airplane by model
         String model = "A350";
         System.out.println("---- Searching airplane model " + model + " ----");
-        if (airFleet.findAirplaneByModel(model) == null) {
+        if (airFleet.searchAirplaneByModel(model) == null) {
             System.out.println("No airplane with model " + model + " found.");
         } else{
-            System.out.println(airFleet.findAirplaneByModel(model));
+            System.out.println(airFleet.searchAirplaneByModel(model));
         }
     }
 }

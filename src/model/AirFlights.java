@@ -1,8 +1,8 @@
-package models;
+package model;
 
 import java.util.Date;
-import java.util.HashSet;
 import java.util.Set;
+
 
 public class AirFlights {
     // Fields.
@@ -59,8 +59,6 @@ public class AirFlights {
     // toString Method.
     @Override
     public String toString() {
-        return "AirFlights{" +
-                "airFlights=" + airFlights +
-                '}';
+        return "AirFlights: " + "\n" + airFlights;
     }
 }

@@ -1,9 +1,8 @@
-package models;
+package model;
 
 /**
  * Class design for Airplane.
- * @author Dário Neves https://github.com/kyw5lien
- * @version 0.1.0
+ * @author kyw5lien
  */
 
 public class Airplane {

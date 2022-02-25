@@ -1,8 +1,8 @@
 package cli;
 
-import models.Account;
-import models.Airplane;
-import models.DataHandler;
+import model.Account;
+import model.Airplane;
+import helperclasses.DataHandler;
 
 import java.util.Scanner;
 

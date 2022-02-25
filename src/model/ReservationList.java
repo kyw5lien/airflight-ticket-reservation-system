@@ -1,4 +1,4 @@
-package models;
+package model;
 
 import java.util.Date;
 import java.util.List;
@@ -20,11 +20,17 @@ public class ReservationList {
     public Reservation searchByReservationCode(String reservationCode) {
         // TODO code here ...
 
+
+
         return null;
     }
 
     public Reservation searchReservationByFlight(long flightID){
-        // TODO code here ...
+        for(Reservation reservation : reservationList){
+            if(reservation.getReservationFlight().getFlightID() == flightID){
+                return reservation;
+            }
+        }
 
         return null;
     }

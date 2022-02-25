@@ -1,10 +1,10 @@
 package tester_classes;
 
-import models.Account;
+import model.Account;
 
 public class AccountTester {
     public static void main(String[] args) {
-        Account account = new Account("Donna", "Gayle", "dgayle", "d@gayle.com", "password0");
+        Account account = new Account("D", "Ganne", "dganne", "d@ganne.com", "password0");
         System.out.println(account.toString());
     }
 }
