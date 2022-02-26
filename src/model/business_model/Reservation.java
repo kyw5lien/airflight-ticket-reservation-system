@@ -1,6 +1,6 @@
 package model.business_model;
 
-import model.flights_model.Flight;
+import model.flight_model.Flight;
 import model.user_model.Account;
 
 public class Reservation {
@@ -11,7 +11,7 @@ public class Reservation {
 
     // Constructors.
     public Reservation(){
-        // Empty Constructor.
+        // TODO code here ...
     }
 
     public Reservation(String reservationCode, Flight reservationFlight, Account account) {

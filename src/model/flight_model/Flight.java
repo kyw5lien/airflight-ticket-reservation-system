@@ -1,6 +1,6 @@
-package model.flights_model;
+package model.flight_model;
 
-import model.flights_model.Airplane;
+import model.airfleet_model.Airplane;
 
 import java.util.Date;
 

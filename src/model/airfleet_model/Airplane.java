@@ -1,4 +1,4 @@
-package model.flights_model;
+package model.airfleet_model;
 
 /**
  * Class design for Airplane.

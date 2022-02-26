@@ -1,4 +1,4 @@
-package model.flights_model;
+package model.flight_model;
 
 import java.util.Date;
 import java.util.HashSet;

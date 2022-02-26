@@ -1,8 +1,8 @@
 package tester_classes.flight_tester;
 
-import model.flights_model.AirFlights;
-import model.flights_model.Airplane;
-import model.flights_model.Flight;
+import model.flight_model.AirFlights;
+import model.airfleet_model.Airplane;
+import model.flight_model.Flight;
 
 import java.util.Date;
 

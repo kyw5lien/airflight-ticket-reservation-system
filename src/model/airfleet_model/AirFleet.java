@@ -1,12 +1,10 @@
-package model.flights_model;
+package model.airfleet_model;
 
 /*
   AirFleet Class..
   Contains a list of airplanes and methods to add and retrieve airplanes from an air fleet.
   @author kyw5lien
  */
-
-import model.flights_model.Airplane;
 
 import java.util.HashSet;
 import java.util.Set;

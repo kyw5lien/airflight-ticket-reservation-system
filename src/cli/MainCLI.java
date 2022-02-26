@@ -1,7 +1,7 @@
 package cli;
 
 import model.user_model.Account;
-import model.flights_model.Airplane;
+import model.airfleet_model.Airplane;
 import helperclasses.DataHandler;
 
 import java.util.Scanner;
