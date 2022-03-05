@@ -55,8 +55,17 @@ public class AirFleet {
     }
 
     // toString Method.
+
+    @Override
+    public String toString() {
+        return "AirFleet{" +
+                "airFleet:" + airFleet +
+                '}';
+    }
+    /**
     @Override
     public String toString() {
         return "AirFleet:" + "\n" + airFleet;
     }
+    */
 }

@@ -21,7 +21,6 @@ public class UsersTester {
         // Testing the Users class ...
         // Test 1: List Users
         // System.out.println("---- Listing Users ----");
-        // users.listUsers();
 
         // Test 2: Find user by login
         String login = "clijsters";

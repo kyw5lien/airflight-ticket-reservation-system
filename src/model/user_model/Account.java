@@ -9,10 +9,6 @@ public class Account extends Person {
     private String password;
 
     // Constructors.
-    public Account() {
-        super();
-    }
-
     public Account(String name, String lastName, String login, String email, String password) {
         super(name, lastName);
         this.login = login;

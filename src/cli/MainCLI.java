@@ -47,8 +47,8 @@ public class MainCLI {
 
     public static void displayAllDomesticFlightsCLInterface() {
         // TODO code here ...
-        if (!DataHandler.getAirplaneListing().getAirFleet().isEmpty()) {
-            for (Airplane airplane : DataHandler.getAirplaneListing().getAirFleet()) {
+        if (!DataHandler.getAirFleet().getAirFleet().isEmpty()) {
+            for (Airplane airplane : DataHandler.getAirFleet().getAirFleet()) {
                 System.out.println(airplane);
                 System.out.println("----------------------");
             }
@@ -63,8 +63,8 @@ public class MainCLI {
 
     public static void displayAirFleet() {
         // TODO code here ...
-        if (!DataHandler.getAirplaneListing().getAirFleet().isEmpty()) {
-            for (Airplane airplane : DataHandler.getAirplaneListing().getAirFleet()) {
+        if (!DataHandler.getAirFleet().getAirFleet().isEmpty()) {
+            for (Airplane airplane : DataHandler.getAirFleet().getAirFleet()) {
                 System.out.println(airplane);
                 System.out.println("----------------------");
             }
@@ -74,8 +74,8 @@ public class MainCLI {
     }
 
     public static void displayUsers() {
-        if (!DataHandler.getUsersListing().getUsers().isEmpty()) {
-            for (Account account : DataHandler.getUsersListing().getUsers()) {
+        if (!DataHandler.getUsers().getUsers().isEmpty()) {
+            for (Account account : DataHandler.getUsers().getUsers()) {
                 System.out.println(account);
                 System.out.println("----------------------");
             }
@@ -88,9 +88,9 @@ public class MainCLI {
         DataHandler.populateUsers();
         DataHandler.populateAirFleet();
 
-        //MainCLI.displayUsers();
-        //MainCLI.displayAirFleet();
+        MainCLI.displayUsers();
+        MainCLI.displayAirFleet();
 
-        MainCLI.displayMainCLInterface();
+        //MainCLI.displayMainCLInterface();
     }
 }

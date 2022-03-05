@@ -2,6 +2,7 @@ package model.business_model;
 
 import model.business_model.Reservation;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -10,6 +11,10 @@ public class ReservationList {
     private List<Reservation> reservationList;
 
     // Constructors.
+    public ReservationList(){
+       this.reservationList = new ArrayList<>();
+    }
+
     public ReservationList(List<Reservation> reservationList) {
         this.reservationList = reservationList;
     }
@@ -21,9 +26,6 @@ public class ReservationList {
 
     public Reservation searchByReservationCode(String reservationCode) {
         // TODO code here ...
-
-
-
         return null;
     }
 
@@ -39,7 +41,6 @@ public class ReservationList {
 
     public List<Reservation> searchReservationsByPeriod(Date initialDate, Date endDate) {
         // TODO code here ...
-
         return null;
     }
 
@@ -56,7 +57,7 @@ public class ReservationList {
     @Override
     public String toString() {
         return "ReservationList{" +
-                "reservationList=" + reservationList +
+                "reservationList:" + reservationList +
                 '}';
     }
 }

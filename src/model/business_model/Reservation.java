@@ -10,10 +10,6 @@ public class Reservation {
     Account account;
 
     // Constructors.
-    public Reservation(){
-        // TODO code here ...
-    }
-
     public Reservation(String reservationCode, Flight reservationFlight, Account account) {
         this.reservationCode = reservationCode;
         this.reservationFlight = reservationFlight;
@@ -46,6 +42,17 @@ public class Reservation {
     }
 
     // toString method.
+
+    @Override
+    public String toString() {
+        return "Reservation{" +
+                "reservationCode:'" + reservationCode + '\'' +
+                ", reservationFlight:" + reservationFlight +
+                ", account:" + account +
+                '}';
+    }
+
+    /**
     @Override
     public String toString() {
         return "Reservation:" + "\n" +
@@ -55,4 +62,5 @@ public class Reservation {
                 "Account: " + "\n" +
                 account;
     }
+    */
 }

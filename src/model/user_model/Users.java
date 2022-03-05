@@ -58,6 +58,14 @@ public class Users {
 
     @Override
     public String toString() {
+        return "Users{" +
+                "users=" + users +
+                '}';
+    }
+    /**
+    public String toString() {
         return "Users:" + "\n" + users;
     }
+     */
+
 }

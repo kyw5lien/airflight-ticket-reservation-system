@@ -6,10 +6,6 @@ public abstract class Person {
     private String lastName;
 
     // Constructors.
-    public Person() {
-        // Empty constructor.
-    }
-
     public Person(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
